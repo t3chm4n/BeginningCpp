@@ -6,4 +6,4 @@
 #include <ctime>
 #include <cctype>
 
-void hangman_improved();
+void hangmanImproved();

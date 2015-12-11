@@ -1,11 +1,11 @@
 // Guess My Number
 // The classic number guessing game
 
-#include "i_guess_your_number.h"
+#include "guessNumber.h"
 
 using namespace std;
 
-void i_guess_your_number()
+void guessNumber()
 {
 	//srand(static_cast<unsigned int>(time(0)));  //seed random number generator
 
@@ -19,7 +19,7 @@ void i_guess_your_number()
 	{
 		//int secretNumber = rand() % (max - min + 1) + 1;  // random number between 1 and 100
 		//cout << "max: " << max << " min: " << min << endl;
-		int secretNumber = guess_number(min, max);
+		int secretNumber = calculate(min, max);
 		cout << "You thought on number " << secretNumber << "? Too (h)igh, too (l)ow, or (y)es?";
 		cin >> guess;
 		++tries;
@@ -45,7 +45,7 @@ void i_guess_your_number()
 
 }
 
-int guess_number(int min, int max)
+int calculate(int min, int max)
 {
 	return ((max - min) / 2) + ((max - min) % 2) + min;
 }

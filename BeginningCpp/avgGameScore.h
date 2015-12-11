@@ -1,4 +1,4 @@
 #pragma once
 #include <iostream>
 
-void menu_chooser_improved();
+void avgGameScore();

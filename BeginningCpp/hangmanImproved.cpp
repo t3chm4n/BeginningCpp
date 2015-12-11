@@ -1,14 +1,14 @@
 // Hangman
 // The classic game of hangman
 
-#include "hangman_improved.h"
+#include "hangmanImproved.h"
 
 using namespace std;
 
-char user_input();
-string update_soFar(string THE_WORD, char guess, string soFar);
+char userInput();
+string updateSoFar(string THE_WORD, char guess, string soFar);
 
-void hangman_improved()
+void hangmanImproved()
 {
 	// set-up
 	const int MAX_WRONG = 8;  // maximum number of incorrect guesses allowed
@@ -35,11 +35,11 @@ void hangman_improved()
 		cout << "\nYou've used the following letters:\n" << used << endl;
 		cout << "\nSo far, the word is:\n" << soFar << endl;
 
-		char guess = user_input();
+		char guess = userInput();
 		while (used.find(guess) != string::npos)
 		{
 			cout << "\nYou've already guessed " << guess << endl;
-			guess = user_input();
+			guess = userInput();
 		}
 
 		used += guess;
@@ -48,7 +48,7 @@ void hangman_improved()
 		{
 			cout << "That's right! " << guess << " is in the word.\n";
 
-			soFar = update_soFar(THE_WORD, guess, soFar);
+			soFar = updateSoFar(THE_WORD, guess, soFar);
 			//// update soFar to include newly guessed letter
 			//for (unsigned int i = 0; i < THE_WORD.length(); ++i)
 			//{
@@ -74,7 +74,7 @@ void hangman_improved()
 	cout << "\nThe word was " << THE_WORD << endl;
 }
 
-char user_input()
+char userInput()
 {
 	char guess;
 	cout << "\n\nEnter your guess: ";
@@ -82,7 +82,7 @@ char user_input()
 	return toupper(guess); //make uppercase since secret word in uppercase
 }
 
-string update_soFar(string THE_WORD, char guess, string soFar)
+string updateSoFar(string THE_WORD, char guess, string soFar)
 {
 	// update soFar to include newly guessed letter
 	for (unsigned int i = 0; i < THE_WORD.length(); ++i)

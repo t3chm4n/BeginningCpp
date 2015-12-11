@@ -4,4 +4,4 @@
 #include <cstdlib>
 #include <ctime>
 
-void word_jumble_improved();
+void wordJumbleImproved();

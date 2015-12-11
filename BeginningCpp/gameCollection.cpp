@@ -1,11 +1,11 @@
 // Game Collection
 // Allow list, add and remove games from collection
 
-#include "game_collection.h"
+#include "gameCollection.h"
 
 using namespace std;
 
-void game_collection()
+void gameCollection()
 {
 	vector<string> collection;
 

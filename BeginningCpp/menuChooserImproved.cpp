@@ -1,11 +1,11 @@
 // Menu Chooser modificado
 // Demonstrates the switch statement
 
-#include "menu_chooser_improved.h"
+#include "menuChooserImproved.h"
 
 using namespace std;
 
-void menu_chooser_improved()
+void menuChooserImproved()
 {
 	//não precisaria dar valor para normal e hard, coloquei pra ficar mais claro
 	enum difficultyLevels{ EASY = 1, NORMAL = 2, HARD = 3 };

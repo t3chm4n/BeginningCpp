@@ -4,4 +4,4 @@
 #include <vector>
 #include <algorithm>
 
-void game_collection();
+void gameCollection();

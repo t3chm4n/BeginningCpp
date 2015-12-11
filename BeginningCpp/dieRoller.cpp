@@ -1,11 +1,11 @@
 // Die Roller
 // Demonstrates generating random numbers
 
-#include "die_roller.h"
+#include "dieRoller.h"
 
 using namespace std;
 
-void die_roller()
+void dieRoller()
 {
 	srand(static_cast<unsigned int>(time(0)));  // seed random number generator based on current time
 

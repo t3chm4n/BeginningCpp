@@ -1,7 +1,7 @@
 #pragma once
-
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 
-void die_roller();
+int calculate(int min, int max);
+void guessNumber();

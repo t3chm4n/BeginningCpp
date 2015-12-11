@@ -1,11 +1,11 @@
 // Word Jumble
 // The classic word jumble game where the player can ask for a hint
 
-#include "word_jumble_improved.h"
+#include "wordJumbleImproved.h"
 
 using namespace std;
 
-void word_jumble_improved()
+void wordJumbleImproved()
 {
 	enum fields { WORD, HINT, NUM_FIELDS };
 	const int NUM_WORDS = 5;
