@@ -5,63 +5,65 @@
 
 using namespace std;
 
-string askText(const string& prompt);
-int askNumber(const string& prompt);
-void tellStory(const string& name, const string& noun, const int& number, const string& bodyPart, const string& verb);
+string askText(const string& rPrompt);
+int askNumber(const string& rPrompt);
+void tellStory(const string& rName, const string& rNoun, const int& rNumber, const string& rBodyPart, 
+	const string& rVerb);
 
 void madLibImproved()
 {
     cout << "Welcome to Mad Lib.\n\n";
     cout << "Answer the following questions to help create a new story.\n";
     
-    string name = askText("Please enter a name: ");
-    string noun = askText("Please enter a plural noun: ");
-    int number = askNumber("Please enter a number: ");
-    string bodyPart = askText("Please enter a body part: ");
-    string verb = askText("Please enter a verb: ");
+    string& name = askText("Please enter a name: ");
+    string& noun = askText("Please enter a plural noun: ");
+	int number = askNumber("Please enter a number: ");
+    string& bodyPart = askText("Please enter a body part: ");
+    string& verb = askText("Please enter a verb: ");
     
     tellStory(name, noun, number, bodyPart, verb);
 }
 
-string askText(const string& prompt)
+string askText(const string& rPrompt)
 {
     string text;
-    cout << prompt;
+    cout << rPrompt;
     cin >> text; 
     return text;
 }
 
-int askNumber(const string& prompt)
+int askNumber(const string& rPrompt)
 {
     int num;
-    cout << prompt;
+    cout << rPrompt;
     cin >> num;
     return num;
 }
 
-void tellStory(const string& name, const string& noun, const int& number, const string& bodyPart, const string& verb)
+void tellStory(const string& rName, const string& rNoun, const int& rNumber, const string& rBodyPart, 
+	const string& rVerb)
 {
     cout << "\nHere's your story:\n";
     cout << "The famous explorer ";
-    cout << name;
+    cout << rName;
     cout << " had nearly given up a life-long quest to find\n";
     cout << "The Lost City of ";
-    cout << noun;
+    cout << rNoun;
     cout << " when one day, the ";
-    cout << noun;
+    cout << rNoun;
     cout << " found the explorer.\n";
     cout << "Surrounded by ";
-    cout << number;
-    cout << " " << noun;
+    cout << rNumber;
+    cout << " " << rNoun;
     cout << ", a tear came to ";
-    cout << name << "'s ";
-    cout << bodyPart << ".\n";
+    cout << rName << "'s ";
+    cout << rBodyPart << ".\n";
     cout << "After all this time, the quest was finally over. ";
     cout << "And then, the ";
-    cout << noun << "\n";
+    cout << rNoun << "\n";
     cout << "promptly devoured ";
-    cout << name << ". ";
+    cout << rName << ". ";
     cout << "The moral of the story? Be careful what you ";
-    cout << verb;
+    cout << rVerb;
     cout << " for.";
 }
