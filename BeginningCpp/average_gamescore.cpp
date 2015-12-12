@@ -1,4 +1,4 @@
-#include "avgGameScore.h"
+#include "average_gamescore.h"
 
 using namespace std;
 

@@ -1,7 +1,7 @@
 // Menu Chooser modificado
 // Demonstrates the switch statement
 
-#include "menuChooserImproved.h"
+#include "menu_chooser_improved.h"
 
 using namespace std;
 

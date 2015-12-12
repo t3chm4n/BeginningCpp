@@ -1,7 +1,7 @@
 // Word Jumble
 // The classic word jumble game where the player can ask for a hint
 
-#include "wordJumbleImproved.h"
+#include "word_jumble_improved.h"
 
 using namespace std;
 

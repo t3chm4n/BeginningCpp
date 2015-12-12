@@ -1,7 +1,7 @@
 // Game Collection
 // Allow list, add and remove games from collection
 
-#include "gameCollection.h"
+#include "game_collection.h"
 
 using namespace std;
 

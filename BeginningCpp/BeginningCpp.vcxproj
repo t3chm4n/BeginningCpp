@@ -79,26 +79,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="askANumber.cpp" />
-    <ClCompile Include="gameCollection.cpp" />
-    <ClCompile Include="hangmanImproved.cpp" />
-    <ClCompile Include="menuChooserImproved.cpp" />
-    <ClCompile Include="guessNumber.cpp" />
-    <ClCompile Include="wordJumbleImproved.cpp" />
-    <ClCompile Include="dieRoller.cpp" />
+    <ClCompile Include="ask_a_number.cpp" />
+    <ClCompile Include="game_collection.cpp" />
+    <ClCompile Include="hangman_improved.cpp" />
+    <ClCompile Include="mad-lib_improved.cpp" />
+    <ClCompile Include="menu_chooser_improved.cpp" />
+    <ClCompile Include="guess_number.cpp" />
+    <ClCompile Include="word_jumble_improved.cpp" />
+    <ClCompile Include="die_roller.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="avgGameScore.cpp" />
+    <ClCompile Include="average_gamescore.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="askANumber.h" />
-    <ClInclude Include="dieRoller.h" />
-    <ClInclude Include="gameCollection.h" />
-    <ClInclude Include="avgGameScore.h" />
-    <ClInclude Include="hangmanImproved.h" />
-    <ClInclude Include="guessNumber.h" />
+    <ClInclude Include="ask_a_number.h" />
+    <ClInclude Include="die_roller.h" />
+    <ClInclude Include="game_collection.h" />
+    <ClInclude Include="average_gamescore.h" />
+    <ClInclude Include="hangman_improved.h" />
+    <ClInclude Include="guess_number.h" />
+    <ClInclude Include="mad-lib_improved.h" />
     <ClInclude Include="main.h" />
-    <ClInclude Include="menuChooserImproved.h" />
-    <ClInclude Include="wordJumbleImproved.h" />
+    <ClInclude Include="menu_chooser_improved.h" />
+    <ClInclude Include="word_jumble_improved.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

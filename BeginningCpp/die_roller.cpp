@@ -1,7 +1,7 @@
 // Die Roller
 // Demonstrates generating random numbers
 
-#include "dieRoller.h"
+#include "die_roller.h"
 
 using namespace std;
 

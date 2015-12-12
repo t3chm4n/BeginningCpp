@@ -1,7 +1,7 @@
 // Hangman
 // The classic game of hangman
 
-#include "hangmanImproved.h"
+#include "hangman_improved.h"
 
 using namespace std;
 

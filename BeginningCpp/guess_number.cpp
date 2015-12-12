@@ -1,7 +1,7 @@
 // Guess My Number
 // The classic number guessing game
 
-#include "guessNumber.h"
+#include "guess_number.h"
 
 using namespace std;
 

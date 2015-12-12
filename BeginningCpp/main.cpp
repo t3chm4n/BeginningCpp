@@ -12,6 +12,7 @@ int main()
 		GAME_COLLECTION,
 		HANGMAN,
 		ASK_A_NUMBER,
+		MAD_LIB,
 		QUIT = 99};
 	int choose = 0;
 
@@ -26,6 +27,7 @@ int main()
 		cout << "6 - Game Collection" << endl;
 		cout << "7 - Hangman Improved" << endl;
 		cout << "8 - Ask a Number" << endl;
+		cout << "9 - Mad-Lib Improved" << endl;
 		cout << "99 - Quit" << endl;
 		cin >> choose;
 
@@ -54,6 +56,9 @@ int main()
 				break;
 			case ASK_A_NUMBER:
 				askANumber();
+				break;
+			case MAD_LIB:
+				madLibImproved();
 				break;
 			case QUIT:
 				break;
